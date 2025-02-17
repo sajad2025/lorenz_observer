@@ -127,8 +127,7 @@ class LorenzObserverAnimation(LorenzObserverSystem):
                                      blit=False)
         
         if save_animation:
-            #anim.save('lorenz_observer.mp4', writer='ffmpeg')
-            anim.save('video/lorenz_observer.html', writer='html')
+            anim.save('lorenz_observer.mp4', writer='ffmpeg')
         
         plt.show()
         
@@ -148,7 +147,7 @@ if __name__ == "__main__":
         observer_states, 
         noisy_measurements,
         trail_length=500,
-        save_animation=True,
+        save_animation=False,
         elev=20,
         azim=-75
     )
