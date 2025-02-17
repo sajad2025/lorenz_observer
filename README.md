@@ -16,25 +16,23 @@ This repository demonstrates the robustness properties of contracting systems th
 ## Lorenz System
 The Lorenz system is a system of ordinary differential equations known for exhibiting chaotic behavior. The system is described by:
 
-$
+$$
 \begin{aligned}
 \dot{x} &= \sigma(y - x) \\
 \dot{y} &= \rho x -y  -xz \\
 \dot{z} &= -\beta z +xy
 \end{aligned}
-$
+$$
 
 where σ, ρ, and β are system parameters. Classic values are σ = 10, ρ = 28, and β = 8/3.
 
 ## Observer YZ
 Consider the following reduced-order observer ([Slotine, 2003](https://web.mit.edu/nsl/www/preprints/modular.pdf)), with noisy measurement of $[x]$ as input and estimated signals of $[\hat{y}, \hat{z}]$ as output: 
 
-$
-\begin{aligned}
+$$\begin{aligned}
 \dot{\hat{y}} &= \rho \,x_m -\hat{y}  -x_m \,\hat{z} \\
 \dot{\hat{z}} &= -\beta \,\hat{z} +x_m \,\hat{y}
-\end{aligned}
-$
+\end{aligned}$$
 
 where $x_m = x + \eta$, and $\eta \sim \mathcal{N}(0, 1.0)$ is the measurement noise.
 
@@ -47,11 +45,7 @@ Contracting systems converge exponentially, exhibiting superior robustness prope
 ## Hierarchical Combination, Observer X
 Now we can construct the following augmented dynamics to clean the noise on the measured $[x]$ state, resulting in a hierarchy of two contracting systems ([Slotine, 2003](https://web.mit.edu/nsl/www/preprints/modular.pdf)), where the estimated $[\hat{y}]$ signal is fed into the following augmented observer system in series:
 
-$
-\begin{aligned}
-\dot{\hat{x}} &= \sigma (\hat{y}  -\hat{x}) \\
-\end{aligned}
-$
+$$\begin{aligned} \dot{\hat{x}} &= \sigma (\hat{y}  -\hat{x}) \\ \end{aligned}$$
 
 # Repository Structure
 ```
