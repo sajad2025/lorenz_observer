@@ -123,7 +123,8 @@ class LorenzChaosAnimation:
                                      blit=True)
         
         if save_animation:
-            anim.save('lorenz_chaos.mp4', writer='ffmpeg')
+            #anim.save('video/lorenz_chaos.mp4', writer='ffmpeg')
+            anim.save('video/lorenz_chaos.html', writer='html')
         
         plt.show()
         
@@ -137,7 +138,7 @@ if __name__ == "__main__":
         dt=0.01,
         n_trajectories=100,
         trail_length=50,
-        save_animation=False,
+        save_animation=True,
         elev=20,
         azim=-75
     )

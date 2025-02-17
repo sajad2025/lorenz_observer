@@ -1,9 +1,9 @@
 # Contraction-based Observer Design for the Lorenz System
 This repository demonstrates the robustness properties of contracting systems through the implementation of a reduced-order contracting observer for the 3D Lorenz system using only 1D noisy measurements. It includes visualizations of both the chaotic nature of the Lorenz system and the performance of the observer under noisy conditions.
 
-[Watch Lorenz Chaos Animation](video/lorenz_chaos.mp4)
+[Watch Lorenz Chaos Animation](video/lorenz_chaos.html)
 
-[Watch Lorenz Observer Animation](video/lorenz_observer.mp4)
+[Watch Lorenz Observer Animation](video/lorenz_observer.html)
 
 # Background
 ## Contraction Theory
@@ -105,10 +105,9 @@ This will show multiple trajectories starting from nearby initial conditions, de
 These can be installed via the requirements.txt file.
 
 ## Optional Dependencies
-For saving animations:
-- ffmpeg (recommended for MP4 output)
+For saving animations, recommended for MP4 output:
+- ffmpeg 
 
-To install ffmpeg:
 ```bash
 # On macOS using Homebrew
 brew install ffmpeg
