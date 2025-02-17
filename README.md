@@ -1,28 +1,7 @@
 # Contraction-based Observer Design for the Lorenz System
 This repository demonstrates the robustness properties of contracting systems through the implementation of a reduced-order contracting observer for the 3D Lorenz system using only 1D noisy measurements. It includes visualizations of both the chaotic nature of the Lorenz system and the performance of the observer under noisy conditions.
 
-<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-  <!-- Video 1 Box -->
-  <div style="display: flex; flex-direction: column; align-items: center;">
-    <h2>chaotic nature</h2>
-    <video width="320" height="240" controls autoplay muted>
-      <source src="https://sajad2025.github.io/lorenz_observer/lorenz_chaos.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <!-- Video 2 Box -->
-  <div style="display: flex; flex-direction: column; align-items: center;">
-    <h2>observer performance</h2>
-    <video width="320" height="240" controls autoplay muted>
-      <source src="https://sajad2025.github.io/lorenz_observer/lorenz_observer.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</div>
-
-<!-- Vertical space -->
-<div style="margin-top: 40px;"></div>
+[Watch videos here](https://sajad2025.github.io/lorenz_observer/)
 
 # Background
 ## Contraction Theory
