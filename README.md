@@ -1,6 +1,29 @@
 # Contraction-based Observer Design for the Lorenz System
 This repository demonstrates the robustness properties of contracting systems through the implementation of a reduced-order contracting observer for the 3D Lorenz system using only 1D noisy measurements. It includes visualizations of both the chaotic nature of the Lorenz system and the performance of the observer under noisy conditions.
 
+<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+  <!-- Video 1 Box -->
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <h2>chaotic nature</h2>
+    <video width="320" height="240" controls autoplay muted>
+      <source src="https://sajad2025.github.io/lorenz_observer/lorenz_chaos.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Video 2 Box -->
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <h2>observer performance</h2>
+    <video width="320" height="240" controls autoplay muted>
+      <source src="https://sajad2025.github.io/lorenz_observer/lorenz_observer.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<!-- Vertical space -->
+<div style="margin-top: 40px;"></div>
+
 # Background
 ## Contraction Theory
 [Lohmiller, W. and Slotine, J.J.E., 1998. On contraction analysis for non-linear systems. Automatica, 34(6), pp.683-696.](https://web.mit.edu/nsl/www/preprints/contraction.pdf)
@@ -54,6 +77,11 @@ lorenz_observer/
 ├── lorenz_system.py                # Base Lorenz system implementation
 ├── lorenz_animation_chaos.py       # Animation, chaotic nature of the Lorenz system
 └── lorenz_animation_observer.py    # Animation, observer performance
+└── docs/
+    ├── index.html                  # HTML file with embedded videos
+    └── videos/
+        ├── lorenz_chaos.mp4        # Video 1: Lorenz chaos demo
+        └── lorenz_observer.mp4     # Video 2: Observer performance demo
 ```
 
 # Installation

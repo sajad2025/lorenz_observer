@@ -3,14 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <title>Video Demo</title>
+  <style>
+    .video-container {
+      display: flex;         /* Lay out items side by side */
+      gap: 1rem;             /* Space between each video box */
+      flex-wrap: wrap;       /* Let them wrap on smaller screens */
+      align-items: flex-start; /* Align boxes at the top (optional) */
+    }
+    .video-box {
+      /* A container for each video + its title */
+      display: flex;
+      flex-direction: column; /* Stacks the title above the video */
+      align-items: center;    /* Centers content horizontally (optional) */
+    }
+    .video-box h2 {
+      margin: 0 0 0.5rem; /* spacing under the title */
+      text-align: center; /* center the text (optional) */
+    }
+  </style>
 </head>
 <body>
-  <h1>My Video Demo</h1>
+  <h1>Animations</h1>
 
-  <video width="640" height="480" controls>
-    <source src="./lorenz_chaos.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  
+  <div class="video-container">
+    <!-- Video 1 Box -->
+    <div class="video-box">
+      <h2>Lorenz Chaos</h2>
+      <video width="320" height="240" controls>
+        <source src="./lorenz_chaos.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Video 2 Box -->
+    <div class="video-box">
+      <h2>Lorenz Observer</h2>
+      <video width="320" height="240" controls>
+        <source src="./lorenz_observer.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
 </body>
 </html>
